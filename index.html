@@ -11,7 +11,8 @@
     .container{max-width:1000px;margin:32px auto;padding:24px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .avatar{width:64px;height:64px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#7c3aed)}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
     nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
     .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:36px;align-items:center}
     .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:14px;padding:22px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04)}
@@ -23,7 +24,7 @@
     .stats{display:flex;gap:12px;margin-top:14px}
     .stat{background:var(--glass);padding:10px;border-radius:10px;color:var(--muted);min-width:90px;text-align:center}
     .profile-right{display:flex;flex-direction:column;align-items:center;gap:12px}
-    .profile-photo{width:100%;border-radius:12px;height:320px;background:url('https://source.unsplash.com/collection/895539/800x800') center/cover;border:1px solid rgba(255,255,255,0.04)}
+    .profile-photo{width:100%;border-radius:12px;height:320px;background:url('profile.jpg') center/cover;border:1px solid rgba(255,255,255,0.04)}
     section{margin-top:22px}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .project{padding:14px;border-radius:10px;background:rgba(255,255,255,0.02)}
@@ -39,7 +40,7 @@
   <div class="container">
     <header>
       <div class="brand">
-        <div class="avatar">MS</div>
+        <div class="avatar"><img src="profile.jpg" alt="Mekala Saidattu" /></div>
         <div>
           <div style="font-weight:800">Mekala Saidattu</div>
           <div style="font-size:13px;color:var(--muted)">Software Engineer • Full Stack • Banking Domain</div>
@@ -80,7 +81,7 @@
       </div>
 
       <aside class="profile-right">
-        <div class="profile-photo card" style="background:url('profile.jpg') center/cover;"></div>
+        <div class="profile-photo card"></div>
         <div class="card" style="width:100%">
           <h3 style="margin-top:0;margin-bottom:6px">Contact</h3>
           <div style="color:var(--muted);font-size:14px">mekalasaidattu@gmail.com</div>
